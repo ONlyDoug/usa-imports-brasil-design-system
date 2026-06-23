@@ -1,0 +1,60 @@
+/* ============================================================
+   COLORS — Dark Mode obrigatório. Proporção 80 / 10 / 10.
+   80% Deep Navy fundo · 10% Off-white traço · 10% acentos cirúrgicos.
+   Electric Blue e Power Red NUNCA são cor base — só estado.
+   ============================================================ */
+:root {
+  /* --- Core brand (base) --- */
+  --navy-900: #060E1C;   /* deepest — overlays, scrims */
+  --navy-800: #0A1628;   /* Deep Navy — fundo padrão SEMPRE */
+  --navy-700: #0F1E36;   /* raised surface / card */
+  --navy-600: #15294A;   /* elevated surface / hover */
+  --navy-500: #1D375F;   /* borders structural, dividers strong */
+
+  --offwhite: #F5F7FA;   /* Off-white — traço padrão de TODO ícone & texto */
+
+  /* --- Surgical state accents (NUNCA base) --- */
+  --electric-blue: #3B9EFF;  /* ativo / informação / autenticado */
+  --electric-blue-dim: #2A6FB8;
+  --power-red: #E63946;      /* alerta / bloqueio / negado */
+  --power-red-dim: #A82832;
+
+  /* --- Neutral ramp (off-white at opacity over navy) --- */
+  --ink-100: #F5F7FA;                       /* primary text / stroke */
+  --ink-80:  rgba(245, 247, 250, 0.80);     /* secondary text */
+  --ink-60:  rgba(245, 247, 250, 0.60);     /* tertiary / captions */
+  --ink-40:  rgba(245, 247, 250, 0.40);     /* disabled / hint */
+  --ink-20:  rgba(245, 247, 250, 0.20);     /* hairline border */
+  --ink-10:  rgba(245, 247, 250, 0.10);     /* subtle divider */
+  --ink-06:  rgba(245, 247, 250, 0.06);     /* faint fill / tint */
+
+  /* --- Accent tints (duo fills, halos) --- */
+  --blue-tint: rgba(59, 158, 255, 0.14);
+  --blue-halo: rgba(59, 158, 255, 0.28);
+  --red-tint:  rgba(230, 57, 70, 0.14);
+  --red-halo:  rgba(230, 57, 70, 0.28);
+
+  /* ===== Semantic aliases ===== */
+  --bg-base:        var(--navy-800);
+  --bg-deep:        var(--navy-900);
+  --surface-card:   var(--navy-700);
+  --surface-raised: var(--navy-600);
+
+  --text-primary:   var(--ink-100);
+  --text-secondary: var(--ink-80);
+  --text-muted:     var(--ink-60);
+  --text-disabled:  var(--ink-40);
+
+  --stroke-icon:    var(--offwhite);    /* default icon stroke */
+
+  --border-hairline: var(--ink-20);
+  --border-strong:   var(--navy-500);
+  --divider:         var(--ink-10);
+
+  --state-active:   var(--electric-blue);
+  --state-active-tint: var(--blue-tint);
+  --state-alert:    var(--power-red);
+  --state-alert-tint:  var(--red-tint);
+
+  --focus-ring:     var(--electric-blue);
+}

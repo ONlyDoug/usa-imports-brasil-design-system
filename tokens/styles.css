@@ -1,0 +1,9 @@
+/* ============================================================
+   STYLES — entrypoint. Importa tokens na ordem correta + webfonts.
+   ============================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import url("./fonts.css");        /* @font-face Next Sphere (local .otf) */
+@import url("./colors.css");
+@import url("./typography.css");
+@import url("./spacing.css");
+@import url("./base.css");

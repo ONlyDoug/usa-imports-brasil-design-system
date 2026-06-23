@@ -1,0 +1,69 @@
+/* ============================================================
+   U.S.A IMPORTS BRASIL — FONTS
+   Next Sphere — display / all-caps headlines & UI labels.
+   Inter — body / UI text (loaded from CDN in styles.css).
+   ============================================================ */
+
+@font-face {
+  font-family: "Next Sphere";
+  src: url("../assets/fonts/NextSphere-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Next Sphere";
+  src: url("../assets/fonts/NextSphere-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Next Sphere";
+  src: url("../assets/fonts/NextSphere-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Next Sphere";
+  src: url("../assets/fonts/NextSphere-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Next Sphere";
+  src: url("../assets/fonts/NextSphere-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Next Sphere";
+  src: url("../assets/fonts/NextSphere-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Next Sphere";
+  src: url("../assets/fonts/NextSphere-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Next Sphere";
+  src: url("../assets/fonts/NextSphere-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Next Sphere";
+  src: url("../assets/fonts/NextSphere-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

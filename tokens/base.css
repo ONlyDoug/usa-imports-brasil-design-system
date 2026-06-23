@@ -1,0 +1,47 @@
+/* ============================================================
+   BASE v2.1 — resets mínimos + defaults de marca. Dark Mode obrigatório.
+   Pesos alinhados à disciplina Next Sphere (900/500/400).
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display headings → Next Sphere all-caps. h1 = decreto (900); h2+ = subhead (500). */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+  text-transform: uppercase;
+  margin: 0;
+}
+h1 { font-weight: var(--weight-display); }            /* 900 */
+h2, h3, h4, h5, h6 { font-weight: var(--weight-subhead); } /* 500 */
+
+/* Eyebrow / micro-label */
+.eyebrow {
+  font-family: var(--font-display);
+  font-weight: var(--weight-label);     /* 400 */
+  font-size: var(--text-2xs);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Big-numbers / telemetria de destaque → Black 900 */
+.big-number { font-family: var(--font-display); font-weight: var(--weight-display); letter-spacing: var(--tracking-display); }
+
+.mono { font-family: var(--font-mono); letter-spacing: var(--tracking-mono); }
+
+a { color: var(--state-active); text-decoration: none; }
+::selection { background: var(--blue-halo); color: var(--offwhite); }
+:focus-visible { outline: var(--ring-width) solid var(--focus-ring); outline-offset: var(--ring-offset); }

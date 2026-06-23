@@ -1,0 +1,60 @@
+/* ============================================================
+   SPACING / RADII / ELEVATION / MOTION
+   Base unit 8px. Icon grid 24px, live area 20px, padding 2px.
+   ============================================================ */
+:root {
+  /* Base-8 spacing scale */
+  --space-0: 0;
+  --space-1: 2px;    /* icon padding / hairline gap */
+  --space-2: 4px;
+  --space-3: 8px;    /* base unit */
+  --space-4: 12px;
+  --space-5: 16px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 48px;
+  --space-9: 64px;
+  --space-10: 96px;
+
+  /* Icon system geometry (single ruler) */
+  --icon-box: 24px;        /* grid box */
+  --icon-live: 20px;       /* live area */
+  --icon-pad: 2px;         /* keepout */
+  --icon-stroke: 2px;      /* stroke weight @ 24px */
+  --icon-radius-outer: 2px;/* external corner radius */
+  --icon-radius-inner: 1px;/* internal junction radius */
+
+  /* Icon display sizes (multiples of 8 where possible) */
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-base: 24px;       /* canonical */
+  --icon-lg: 32px;
+  --icon-xl: 40px;
+
+  /* Corner radii — soft-but-structural (Bouba) */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 999px;
+
+  /* Elevation — dark mode: glow + depth, never soft gray drop */
+  --elev-1: 0 1px 0 rgba(245,247,250,0.04) inset, 0 2px 8px rgba(6,14,28,0.5);
+  --elev-2: 0 1px 0 rgba(245,247,250,0.05) inset, 0 8px 24px rgba(6,14,28,0.6);
+  --elev-3: 0 1px 0 rgba(245,247,250,0.06) inset, 0 16px 48px rgba(6,14,28,0.7);
+  --glow-active: 0 0 0 1px rgba(59,158,255,0.5), 0 0 16px rgba(59,158,255,0.25);
+  --glow-alert: 0 0 0 1px rgba(230,57,70,0.5), 0 0 16px rgba(230,57,70,0.25);
+
+  /* Focus ring */
+  --ring-width: 2px;
+  --ring-offset: 2px;
+
+  /* Motion — measured, aerospace-precise. No bounce. */
+  --ease-standard: cubic-bezier(0.2, 0, 0.1, 1);  /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);      /* @kind other */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);          /* @kind other */
+  --dur-fast: 120ms;   /* @kind other */
+  --dur-base: 180ms;   /* @kind other */
+  --dur-slow: 280ms;   /* @kind other */
+}

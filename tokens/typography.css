@@ -1,0 +1,65 @@
+/* ============================================================
+   TYPOGRAPHY v2.1 — U.S.A IMPORTS BRASIL
+   Next Sphere (display / all-caps, UNICASE) + Inter (body/UI) + JetBrains Mono (códigos/telemetria).
+   -----------------------------------------------------------------
+   DISCIPLINA DE PESOS (Next Sphere = voz da Águia):
+   Apenas 3 pesos entram nos ESTILOS da marca — 900 / 500 / 400.
+   Os demais pesos seguem instalados via @font-face (fonts.css) para
+   completude, mas NÃO devem ser usados em estilos da marca.
+   ============================================================ */
+:root {
+  /* Families */
+  --font-display: "Next Sphere", "Inter", system-ui, sans-serif; /* headlines, labels, ALL-CAPS */
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;     /* paragraphs, UI copy */
+  --font-mono: "JetBrains Mono", "SFMono-Regular", ui-monospace, monospace; /* tracking codes, telemetry, IDs */
+
+  /* ---- Next Sphere weight ramp (todos instalados; só 3 são "brand") ---- */
+  --w-thin: 100;        /* instalado, NÃO-brand */
+  --w-extralight: 200;  /* instalado, NÃO-brand */
+  --w-light: 300;       /* instalado, NÃO-brand */
+  --w-regular: 400;     /* BRAND — label/overline/caption */
+  --w-medium: 500;      /* BRAND — H2/H3, labels interativos (button/tab/nav) */
+  --w-semibold: 600;    /* instalado, NÃO-brand */
+  --w-bold: 700;        /* instalado, NÃO-brand */
+  --w-extrabold: 800;   /* instalado, NÃO-brand */
+  --w-black: 900;       /* BRAND — display/H1/decreto/big-numbers */
+
+  /* ---- Papéis semânticos de peso (USE ESTES nos estilos) ---- */
+  --weight-display: var(--w-black);   /* 900 — decreto, máxima autoridade da Águia */
+  --weight-subhead: var(--w-medium);  /* 500 — H2/H3 e labels interativos */
+  --weight-label:   var(--w-regular); /* 400 — eyebrow/overline/caption all-caps */
+
+  /* Inter (body bicameral) usa a faixa própria — a disciplina acima é só da Next Sphere */
+  --w-body-regular: 400;
+  --w-body-medium: 500;
+  --w-body-semibold: 600;
+  --w-body-bold: 700;
+
+  /* Display scale (Next Sphere — uppercase) — escala custom ratificada (handoff) */
+  --display-2xl: 72px;
+  --display-xl: 56px;
+  --display-lg: 40px;
+  --display-md: 30px;
+  --display-sm: 22px;
+
+  /* Body / UI scale (Inter) */
+  --text-xl: 20px;
+  --text-lg: 18px;
+  --text-md: 16px;   /* base */
+  --text-sm: 14px;
+  --text-xs: 12px;
+  --text-2xs: 11px;  /* micro-labels, eyebrow */
+
+  /* Line heights — vertical rhythm em base-8 */
+  --leading-tight: 1.05;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* Tracking — Next Sphere all-caps corre largo e deliberado */
+  --tracking-display: 0.04em;
+  --tracking-eyebrow: 0.22em;
+  --tracking-label: 0.08em;
+  --tracking-body: 0em;
+  --tracking-mono: 0.02em;
+}
