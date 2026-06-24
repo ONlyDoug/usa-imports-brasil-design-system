@@ -26,6 +26,8 @@ Tudo no sistema visual deve reforçar **visão / vigília / curadoria / guarda**
 
 **Tagline oficial:** *Visão de Águia.*
 
+**Slogan institucional (estabelecido, vetorizado no selo):** *"Portal de Inovação Global"* — já consta gravado na arte aprovada do selo (`assets/brand/selo-visao-aguia-*.svg`). Tratar como copy de marca existente; **usar a arte do selo verbatim**, não reescrever o texto do selo.
+
 ---
 
 ## 3 · O símbolo (definitivo — usar verbatim)
@@ -94,6 +96,9 @@ Valores canônicos em `tokens/colors.css`. Princípios:
 ---
 
 ## 9 · O que NÃO fazer (negativos globais)
+
+**Princípio-mestre: SOBRIEDADE.** Sistema sóbrio, instrumental, aeroespacial. Nada de decoração sem função. Quando em dúvida entre adicionar e remover, **remova**. Excesso (anéis orbitais, glows empilhados, pulses, sombras) é erro de design — não recurso.
+
 
 - Fundo branco como padrão (é exceção sinalizada).
 - Gradientes fora da paleta; cores fora dos tokens.

@@ -17,3 +17,13 @@ Este repo parte do handoff do Claude Design, **auditado e corrigido**. Mudanças
 | # | O que | Motivo |
 |---|---|---|
 | 7 | Adicionados `assets/brand/selo-visao-aguia-positivo.svg` e `…-branco-vazado.svg` | O selo estava especificado em `docs/07` mas faltava o vetor; agora o ativo está no repo (viewBox 920×920, Águia verbatim, sem Power Red) |
+
+## Rodada de correção (pós-2º handoff) — causas-raiz tratadas na origem
+| # | Problema observado no 2º handoff | Causa-raiz (no repo) | Correção |
+|---|---|---|---|
+| 8 | Landing page gerada (escopo errado) | `docs/08` listava "Home/landing" como tela | Removido; `docs/08` agora proíbe landing/marketing explicitamente |
+| 9 | Grid/catálogo de ícones sumiu (regressão) | `docs/05` só descrevia em prosa, não mandava exibir | `docs/05` agora **obriga** card de construção + catálogo dos 54 |
+| 10 | Cards de símbolo/symboltipo/selo "vazios" | repo não tinha spec de construção de marca | Novo `docs/09` exige construção+clear space+matriz de variações |
+| 11 | Falta de monocromático | só havia positivo/negativo | Gerados `simbolo-aguia-mono.svg` e `selo-visao-aguia-mono.svg` (olho verificado); symboltipo mono especificado p/ derivação verificada |
+| 12 | Selo sobrecarregado (anéis/glow/pulse/shadow) | `docs/07` não proibia decoração | `docs/07` agora proíbe explicitamente; princípio "sobriedade" no brand-context |
+| 13 | Slogan "Portal de Inovação Global" em aberto | eu não havia inspecionado o asset | Descoberto: já vetorizado no selo; documentado como copy estabelecida |

@@ -23,7 +23,7 @@ docs/                       # especificações por camada (01→08)
 tokens/                     # CSS canônico (cores, tipografia, espaçamento, fontes, base)
 assets/fonts/               # Next Sphere (9 pesos .otf)
 assets/icons/               # 54 ícones SVG (ruler 24px)
-assets/brand/               # símbolo + symboltipo + selo "Visão de Águia" (positivo/negativo/vazado)
+assets/brand/               # símbolo + symboltipo + selo (positivo/negativo/mono)
 components/                 # componentes-base React (Button, IconButton, Badge, Icon)
 ```
 
