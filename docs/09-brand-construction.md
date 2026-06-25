@@ -15,8 +15,8 @@ Os cards de marca **não podem flutuar a arte solta**. Cada um (símbolo, symbol
 | Marca | Positivo | Negativo | Mono 1-cor |
 |---|---|---|---|
 | Símbolo | `simbolo-aguia-positivo.svg` | `simbolo-aguia-negativo.svg` | `simbolo-aguia-mono.svg` ✅ |
-| Symboltipo horizontal | `symboltipo-horizontal-positivo.svg` | `symboltipo-horizontal-negativo.svg` | *derivar do master preservando o olho (fill-rule) — verificar render* |
-| Symboltipo empilhado | `symboltipo-empilhado-positivo.svg` | `symboltipo-empilhado-negativo.svg` | *idem* |
+| Symboltipo horizontal | `symboltipo-horizontal-positivo.svg` | `symboltipo-horizontal-negativo.svg` | `symboltipo-horizontal-mono.svg` ✅ |
+| Symboltipo empilhado | `symboltipo-empilhado-positivo.svg` | `symboltipo-empilhado-negativo.svg` | `symboltipo-empilhado-mono.svg` ✅ |
 | Selo | `selo-visao-aguia-positivo.svg` | `selo-visao-aguia-branco-vazado.svg` | `selo-visao-aguia-mono.svg` ✅ |
 
 ## Regra crítica do símbolo (em toda variação)

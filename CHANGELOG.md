@@ -27,3 +27,15 @@ Este repo parte do handoff do Claude Design, **auditado e corrigido**. Mudanças
 | 11 | Falta de monocromático | só havia positivo/negativo | Gerados `simbolo-aguia-mono.svg` e `selo-visao-aguia-mono.svg` (olho verificado); symboltipo mono especificado p/ derivação verificada |
 | 12 | Selo sobrecarregado (anéis/glow/pulse/shadow) | `docs/07` não proibia decoração | `docs/07` agora proíbe explicitamente; princípio "sobriedade" no brand-context |
 | 13 | Slogan "Portal de Inovação Global" em aberto | eu não havia inspecionado o asset | Descoberto: já vetorizado no selo; documentado como copy estabelecida |
+
+## Rodada de auditoria (3º handoff) — resultado
+| # | Verificação | Resultado |
+|---|---|---|
+| 14 | Landing/marketing | ✅ Removida (só telas de app: Rastreio/Produto/Dashboard) |
+| 15 | Catálogo + grid de ícones | ✅ De volta (icon-catalog + icon-construction cards) |
+| 16 | Cards de marca (construção/matriz/misuse) | ✅ Símbolo e selo completos |
+| 17 | Peso display | ✅ Manteve 900 (sem regressão) |
+| 18 | Selo sóbrio | ✅ Limpo (só 3 estados, glow sutil; "excesso" era falso alarme em comentário) |
+| 19 | Drop-shadow proibido | ✅ Nenhum — usam tokens de elevação/glow |
+| 20 | Symboltipo guideline | ⚠️ Subdesenvolvido (1 card vs 3) + faltava mono |
+| 21 | Symboltipo mono | ✅ Gerado e verificado agora: `symboltipo-{horizontal,empilhado}-mono.svg` (olho aberto) |
