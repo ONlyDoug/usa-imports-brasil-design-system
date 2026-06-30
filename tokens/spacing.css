@@ -31,6 +31,11 @@
   --icon-lg: 32px;
   --icon-xl: 40px;
 
+  /* Control sizing — alturas interativas (toque ≥40px, alinhadas ao grid-8) */
+  --control-h-sm: 40px;
+  --control-h-md: 48px;
+  --control-h-lg: 56px;
+
   /* Corner radii — soft-but-structural (Bouba) */
   --radius-xs: 2px;
   --radius-sm: 4px;

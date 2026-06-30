@@ -2,7 +2,7 @@
 
 Repositório-fonte do sistema de design da marca **U.S.A IMPORTS BRASIL**, estética Tech-Premium cibernético-aeroespacial (NASA/SpaceX), **Dark Mode obrigatório**.
 
-Este repo é a **fonte de verdade curada e corrigida**. Foi construído a partir de um handoff do Claude Design, auditado contra as especificações `.md` aprovadas da marca, com as divergências já resolvidas. Serve para alimentar o Claude Design (ou um agente de código) na geração do sistema final completo.
+Este repo é a **feed operacional curada e corrigida** que alimenta o Claude Design — alinhada e **subordinada à grade canônica** da marca (`00_BRAND_CANON` → `01`…`04`). Foi construído a partir de um handoff do Claude Design, auditado contra as especificações `.md` aprovadas, com as divergências já resolvidas. Em conflito, vence o `00_BRAND_CANON`.
 
 ## Como usar
 1. Conecte este repositório no Claude Design (campo *Código de link do GitHub*).

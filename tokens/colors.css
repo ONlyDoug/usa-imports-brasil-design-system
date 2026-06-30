@@ -31,8 +31,10 @@
   /* --- Accent tints (duo fills, halos) --- */
   --blue-tint: rgba(59, 158, 255, 0.14);
   --blue-halo: rgba(59, 158, 255, 0.28);
+  --blue-border: rgba(59, 158, 255, 0.40);
   --red-tint:  rgba(230, 57, 70, 0.14);
   --red-halo:  rgba(230, 57, 70, 0.28);
+  --red-border: rgba(230, 57, 70, 0.40);
 
   /* ===== Semantic aliases ===== */
   --bg-base:        var(--navy-800);

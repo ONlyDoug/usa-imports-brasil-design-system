@@ -7,9 +7,9 @@ import { Icon } from "../icons/Icon";
    ============================================================ */
 
 const SIZES = {
-  sm: { height: 34, padding: "0 14px", font: 12, gap: 8, icon: 16 },
-  md: { height: 42, padding: "0 18px", font: 13, gap: 9, icon: 18 },
-  lg: { height: 50, padding: "0 24px", font: 14, gap: 10, icon: 20 },
+  sm: { height: "var(--control-h-sm)", padX: "var(--space-5)", font: "var(--text-xs)", gap: "var(--space-3)", icon: 16 },
+  md: { height: "var(--control-h-md)", padX: "var(--space-6)", font: "var(--text-sm)", gap: "var(--space-3)", icon: 20 },
+  lg: { height: "var(--control-h-lg)", padX: "var(--space-7)", font: "var(--text-sm)", gap: "var(--space-4)", icon: 20 },
 };
 
 export function Button({
@@ -34,11 +34,11 @@ export function Button({
     justifyContent: "center",
     gap: s.gap,
     height: s.height,
-    padding: s.padding,
+    padding: `0 ${s.padX}`,
     fontFamily: "var(--font-display)",
-    fontWeight: 500,
+    fontWeight: "var(--weight-subhead)",
     fontSize: s.font,
-    letterSpacing: "0.08em",
+    letterSpacing: "var(--tracking-label)",
     textTransform: "uppercase",
     border: "1px solid transparent",
     borderRadius: "var(--radius-sm)",

@@ -5,8 +5,8 @@ import { Icon } from "../icons/Icon";
 
 const TONES = {
   neutral: { fg: "var(--text-secondary)", bg: "var(--ink-06)", bd: "var(--border-hairline)" },
-  active: { fg: "var(--electric-blue)", bg: "var(--blue-tint)", bd: "rgba(59,158,255,.4)" },
-  alert: { fg: "var(--power-red)", bg: "var(--red-tint)", bd: "rgba(230,57,70,.4)" },
+  active: { fg: "var(--electric-blue)", bg: "var(--blue-tint)", bd: "var(--blue-border)" },
+  alert: { fg: "var(--power-red)", bg: "var(--red-tint)", bd: "var(--red-border)" },
 };
 
 export function Badge({ children, tone = "neutral", icon, style = {}, ...rest }) {
@@ -16,13 +16,13 @@ export function Badge({ children, tone = "neutral", icon, style = {}, ...rest })
       style={{
         display: "inline-flex",
         alignItems: "center",
-        gap: 6,
-        height: 24,
-        padding: icon ? "0 10px 0 8px" : "0 10px",
+        gap: "var(--space-2)",
+        height: "var(--space-6)",
+        padding: icon ? "0 var(--space-3) 0 var(--space-2)" : "0 var(--space-3)",
         fontFamily: "var(--font-display)",
-        fontWeight: 500,
-        fontSize: 11,
-        letterSpacing: "0.1em",
+        fontWeight: "var(--weight-subhead)",
+        fontSize: "var(--text-2xs)",
+        letterSpacing: "var(--tracking-label)",
         textTransform: "uppercase",
         color: t.fg,
         background: t.bg,
@@ -33,7 +33,7 @@ export function Badge({ children, tone = "neutral", icon, style = {}, ...rest })
       }}
       {...rest}
     >
-      {icon ? <Icon name={icon} size={14} color={t.fg} /> : null}
+      {icon ? <Icon name={icon} size={16} color={t.fg} /> : null}
       {children}
     </span>
   );

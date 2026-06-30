@@ -7,7 +7,7 @@ Leia `brand-context.md` primeiro, depois `docs/01→08`, depois `tokens/`. Use S
 
 Marca Tech-Premium aeroespacial (NASA/SpaceX), **Dark Mode obrigatório**. Fundo padrão Deep Navy #0A1628. Proporção de cor 80/10/10 — Electric Blue (#3B9EFF) e Power Red (#E63946) são **estado, nunca cor base**.
 
-Tese: "A Águia não mergulha — ela VÊ" (visão/curadoria/autenticação/guarda). Tagline: Visão de Águia. NUNCA usar narrativa de velocidade/voo picado/Strike Eagle.
+Tese: "A Águia VÊ" / Visão de Águia (visão/curadoria/autenticação/guarda) — **afirmação pura, NUNCA pela negação**. NUNCA usar narrativa de velocidade/voo picado/Strike Eagle/"a Águia mergulha".
 
 Símbolo da Águia (assets/brand): usar **verbatim** — nunca redesenhar, simplificar, fundir penas ou fechar o olho; posicionar só por transform. A Águia não é ícone de UI.
 

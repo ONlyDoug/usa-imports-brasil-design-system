@@ -4,9 +4,9 @@ import { Icon } from "../icons/Icon";
 /* IconButton — square, icon-only control. Outline icon on a quiet navy chip. */
 
 const SIZES = {
-  sm: { box: 32, icon: 18 },
-  md: { box: 40, icon: 20 },
-  lg: { box: 48, icon: 24 },
+  sm: { box: "var(--control-h-sm)", icon: 20 },
+  md: { box: "var(--control-h-md)", icon: 24 },
+  lg: { box: "var(--control-h-lg)", icon: 24 },
 };
 
 export function IconButton({

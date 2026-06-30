@@ -39,3 +39,25 @@ Este repo parte do handoff do Claude Design, **auditado e corrigido**. Mudanças
 | 19 | Drop-shadow proibido | ✅ Nenhum — usam tokens de elevação/glow |
 | 20 | Symboltipo guideline | ⚠️ Subdesenvolvido (1 card vs 3) + faltava mono |
 | 21 | Symboltipo mono | ✅ Gerado e verificado agora: `symboltipo-{horizontal,empilhado}-mono.svg` (olho aberto) |
+
+## Rodada de alinhamento canônico (4ª) — diretrizes vigentes
+| # | Problema | Causa-raiz (no repo) | Correção |
+|---|---|---|---|
+| 22 | Tese enunciada **pela negação** ("A Águia não mergulha — ela VÊ") | `brand-context.md §2` (headline) e `CLAUDE-DESIGN-NOTES.md` carregavam frase já descartada (`00 §6`) — contaminava todo gerado no Claude Design | Trocado por **afirmação pura: "A Águia VÊ" / Visão de Águia**. Forma negada removida de ambos os arquivos |
+| 23 | Autoridade ambígua (repo se declarava "fonte de verdade") | `brand-context.md` e `README` não deferiam à grade canônica | Reescritos para **subordinar** o repo ao `00_BRAND_CANON`. Ordem: **00 > tokens > brand-context** |
+
+## Rodada de higiene de componentes (5ª) — base-8 + tokens em toda métrica
+Causa-raiz: os 4 componentes-núcleo cravavam px/cor em vez de consumir tokens (contraria `docs/06` "nunca px cru" e `docs/04` "múltiplo de 8"). Corrigido na origem para o Claude Design herdar o padrão certo ao expandir a biblioteca.
+
+| # | O que | De | Para |
+|---|---|---|---|
+| 24 | Alturas de Button | 34 / 42 / 50 (fora do grid-8; `sm` < 40 de toque) | **40 / 48 / 56** via `--control-h-{sm,md,lg}` (novos tokens) |
+| 25 | Fonte de Button | 12 / **13** / 14 (13 fora da escala) | `--text-xs / --text-sm / --text-sm` (12 / 14 / 14) |
+| 26 | Padding / gap / weight / tracking de Button | px e `0.08em` crus, `fontWeight: 500` | `--space-*`, `--tracking-label`, `--weight-subhead` |
+| 27 | Caixas de IconButton | 32 / 40 / 48 (`sm` < 40 de toque) | **40 / 48 / 56** via `--control-h-*`; ícones canônicos 20 / 24 / 24 |
+| 28 | Badge: bordas de estado | `rgba(...,.4)` cru | novos tokens **`--blue-border` / `--red-border`** |
+| 29 | Badge: dimensões / fonte / ícone | `gap 6`, `pad 10/8`, `font 11`, `icon 14` crus | `--space-2/3`, `--text-2xs`, `--tracking-label`, ícone 16 (mín. da régua) |
+
+**Novos tokens:** `--control-h-sm/md/lg` (spacing.css) · `--blue-border` / `--red-border` (colors.css).
+**Intactos (já corretos):** `base.css`, `styles.css`, `Icon.jsx`, `colors`/`spacing`/`typography` pré-existentes, 54 ícones, 6 SVGs de marca, selos.
+**Decisão registrada:** `sm` de Button/IconButton subiu para 40px para honrar o alvo de toque ≥40 do `docs/06`. Se surgir necessidade de controle denso (32px) em desktop, abrir variante `xs` documentada — não reverter o `sm`.

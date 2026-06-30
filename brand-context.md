@@ -1,7 +1,7 @@
 # BRAND CONTEXT — U.S.A IMPORTS BRASIL
 ### Documento-mestre · ler antes de qualquer geração
 
-> Este documento contextualiza a marca para que qualquer agente (Claude Design ou de código) gere o sistema de forma coerente. As regras aqui são a **fonte de verdade**. Em caso de conflito com qualquer arquivo, este documento e os `tokens/*.css` vencem.
+> Este documento contextualiza a marca para que qualquer agente (Claude Design ou de código) gere o sistema de forma coerente. É o **espelho operacional** da identidade, alinhado e **subordinado** à grade canônica — raiz `00_BRAND_CANON`. Ordem de autoridade em caso de conflito: **`00_BRAND_CANON` > `tokens/*.css` (valores numéricos canônicos) > este documento**.
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## 2 · A tese central (o coração de tudo)
 
-> **"A Águia não mergulha — ela VÊ."**
+> **A ÁGUIA VÊ.** — *Visão de Águia.*
 
 A autoridade da marca vem de **ver mais longe e selecionar** — não de chegar mais rápido. O olhar da Águia:
 - **vê e seleciona** (curadoria implacável),
