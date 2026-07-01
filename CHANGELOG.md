@@ -61,3 +61,14 @@ Causa-raiz: os 4 componentes-núcleo cravavam px/cor em vez de consumir tokens (
 **Novos tokens:** `--control-h-sm/md/lg` (spacing.css) · `--blue-border` / `--red-border` (colors.css).
 **Intactos (já corretos):** `base.css`, `styles.css`, `Icon.jsx`, `colors`/`spacing`/`typography` pré-existentes, 54 ícones, 6 SVGs de marca, selos.
 **Decisão registrada:** `sm` de Button/IconButton subiu para 40px para honrar o alvo de toque ≥40 do `docs/06`. Se surgir necessidade de controle denso (32px) em desktop, abrir variante `xs` documentada — não reverter o `sm`.
+
+## Rodada de correção de asset (6ª) — logos transparentes
+Causa-raiz do "logo com caixa" nas aplicações: 6 SVGs de marca traziam um `<rect>` de fundo opaco embutido. Sobre qualquer superfície de hex diferente (ex.: card navy-700), o retângulo aparecia como uma placa. Logo de marca é transparente — o fundo é da tela.
+
+| # | Arquivo | Removido |
+|---|---|---|
+| 30 | `simbolo-aguia-positivo.svg` / `-negativo.svg` | `rect fundo` (#0A1628 / #F5F7FA) |
+| 31 | `symboltipo-horizontal-positivo.svg` / `-negativo.svg` | `rect fundo` |
+| 32 | `symboltipo-empilhado-positivo.svg` / `-negativo.svg` | `rect fundo` |
+
+**Regra:** `positivo` (arte off-white, transparente) → superfícies escuras; `negativo` (arte navy, transparente) → superfícies claras; `mono` (currentColor). Nenhum asset de marca carrega fundo. Se precisar de avatar com placa, é asset separado e nomeado, nunca o lockup primário.
