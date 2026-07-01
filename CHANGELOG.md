@@ -72,3 +72,14 @@ Causa-raiz do "logo com caixa" nas aplicações: 6 SVGs de marca traziam um `<re
 | 32 | `symboltipo-empilhado-positivo.svg` / `-negativo.svg` | `rect fundo` |
 
 **Regra:** `positivo` (arte off-white, transparente) → superfícies escuras; `negativo` (arte navy, transparente) → superfícies claras; `mono` (currentColor). Nenhum asset de marca carrega fundo. Se precisar de avatar com placa, é asset separado e nomeado, nunca o lockup primário.
+
+## Rodada de decisão de escopo (7ª) — selo é stateless
+Decisão do dono: descartar o **selo em 3 estados de autenticação** (autenticado/verificando/negado + glow). É construção desnecessária e incoerente — um selo "negado" esvazia a própria garantia. O selo permanece marca verbatim, num único estado.
+
+| # | O que | Ação |
+|---|---|---|
+| 33 | `docs/07.1` "Estados de autenticação (única variação permitida)" | Removido. Selo é verbatim/stateless; status vai para UI ao lado, nunca no selo |
+| 34 | `docs/07.3` "...usado em produto, checkout e no selo" | Trocado por "...e status de UI — nunca aplicado sobre o selo" |
+| 35 | `CLAUDE-DESIGN-NOTES` lista de proprietários | Selo marcado como verbatim SEM estados; autenticação = badge/alerta, nunca no selo |
+
+**Mantido:** as 3 VERSÕES de arte do selo (positivo / branco-vazado / mono) — são versões de contexto, não estados. **Novo descarte** (adicionar ao `00_BRAND_CANON §6`): "selo em 3 estados".

@@ -13,4 +13,4 @@ Símbolo da Águia (assets/brand): usar **verbatim** — nunca redesenhar, simpl
 
 Tipografia: Next Sphere é **unicase → ALL-CAPS sempre**, só em display/labels, nunca em texto corrido; pesos só **900/500/400**. Inter para corpo/UI. JetBrains Mono para códigos de rastreio/telemetria/IDs.
 
-Reaproveitar os 54 ícones e os componentes existentes; expandir a biblioteca, criar os componentes proprietários "Visão de Águia" (selo, timeline de rastreio, estados de autenticação, telemetria) e as telas-âncora (docs/08). Motion sem bounce. Cantos Bouba suaves. NÃO incluir o mascote U.B.I. (rodada própria).
+Reaproveitar os 54 ícones e os componentes existentes; expandir a biblioteca, criar os componentes proprietários "Visão de Águia" (selo verbatim SEM estados, timeline de rastreio, status de autenticação em UI via badge/alerta — nunca no selo, telemetria) e as telas-âncora (docs/08). Motion sem bounce. Cantos Bouba suaves. NÃO incluir o mascote U.B.I. (rodada própria).
